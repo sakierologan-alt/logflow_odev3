@@ -1,0 +1,19 @@
+127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326
+192.168.1.10 - - [10/Oct/2000:13:56:01 -0700] "GET /index.html HTTP/1.1" 200 5120 "http://example.com/" "Mozilla/5.0 (X11; Linux x86_64) Firefox/118.0"
+192.168.1.11 - - [10/Oct/2000:13:56:07 -0700] "GET /search?q=log+flow&page=2 HTTP/1.1" 200 4096
+10.0.0.7 - alice [10/Oct/2000:13:57:12 -0700] "POST /login HTTP/1.1" 302 0
+this is not a log line
+10.0.0.8 - - [10/Oct/2000:13:58:40 -0700] "GET /missing.html HTTP/1.1" 404 512
+   10.0.0.9   -   -   [10/Oct/2000:13:59:03 -0700]   "GET  /about.html  HTTP/1.1"   200   1500
+
+172.16.0.3 - - [11/Oct/2000:09:00:00 +0300] "GET /img/logo.png HTTP/1.1" 200 - "https://example.com/home" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/118.0 Safari/537.36"
+172.16.0.4 - - [32/Foo/2000:09:00:05 +0300] "GET /bad-date HTTP/1.1" 200 100
+172.16.0.5 - - [11/Oct/2000:09:00:09 +0300] "GET /bad-status HTTP/1.1" 999 100
+172.16.0.6 - - [11/Oct/2000:09:01:15 +0300] "DELETE /api/items/42 HTTP/1.1" 204 0
+172.16.0.7 - - [11/Oct/2000:09:02:30 +0300] "GET /static/app.js HTTP/1.1" 304 -
+10.1.0.1 - - [11/Oct/2000:09:05:00 +0300] "GET /api/users HTTP/1.1" 200 812 "-" "curl/8.0"
+10.1.0.2 - - [11/Oct/2000:09:05:30 +0300] "GET /api/users/42 HTTP/1.1" 404 128 "-" "Mozilla/5.0 (X11; Linux x86_64) Firefox/118.0"
+10.1.0.3 - - [11/Oct/2000:09:06:10 +0300] "POST /api/orders HTTP/1.1" 500 64 "-" "curl/8.0"
+10.1.0.4 - - [11/Oct/2000:09:07:45 +0300] "DELETE /api/orders/7 HTTP/1.1" 403 32 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/118.0"
+10.1.0.5 - - [11/Oct/2000:09:08:20 +0300] "GET /api/health HTTP/1.1" 200 15 "-" "curl/8.0"
+10.1.0.6 - - [11/Oct/2000:09:09:00 +0300] "PUT /api/users/42 HTTP/1.1" 503 256 "-" "curl/8.0"

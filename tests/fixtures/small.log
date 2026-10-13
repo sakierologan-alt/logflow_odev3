@@ -1,0 +1,8 @@
+10.0.0.1 - - [10/Oct/2000:13:55:36 -0700] "GET /api/users HTTP/1.1" 200 512 "-" "curl/8.0"
+10.0.0.2 - - [10/Oct/2000:13:56:01 -0700] "GET /api/users/42 HTTP/1.1" 404 128 "-" "Mozilla/5.0 (X11; Linux)"
+10.0.0.3 - - [10/Oct/2000:13:57:12 -0700] "POST /api/orders HTTP/1.1" 500 64 "-" "curl/8.0"
+10.0.0.4 - - [10/Oct/2000:13:58:40 -0700] "GET /index.html HTTP/1.1" 404 1024 "-" "Mozilla/5.0 (X11; Linux)"
+10.0.0.5 - - [10/Oct/2000:13:59:03 -0700] "GET /static/app.js HTTP/1.1" 200 2048 "-" "Mozilla/5.0 (X11; Linux)"
+bu satır bozuk
+10.0.0.6 - - [10/Oct/2000:14:00:00 -0700] "DELETE /api/orders/7 HTTP/1.1" 403 32 "-" "curl/8.0"
+10.0.0.7 - - [10/Oct/2000:14:01:00 -0700] "GET /api/health HTTP/1.1" 304 - "-" "curl/8.0"
